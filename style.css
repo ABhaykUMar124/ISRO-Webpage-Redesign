@@ -1,0 +1,819 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: font2;
+    src: url(ITC\ Avant\ Garde\ Gothic\ Medium.otf);
+}
+@font-face {
+    font-family: font3;
+    src: url(ITC\ Avant\ Garde\ Gothic\ CE\ Book.otf);
+}
+html{
+    font-size: 10px;
+    font-family: font2;
+
+    font-weight: lighter;
+    background-color: black;
+}
+#page1{
+    position: relative;
+
+
+    .video{
+        position: absolute;
+        height: 56.75vw;
+        z-index: -33;
+        
+        .video1{
+            height: 56.75vw;
+           
+        }
+        .video2{
+            height: 49.5vw;
+            
+        }
+        .video3{
+            height: 56.75vw;
+        }
+        .video4{
+            height: 56.75vw;
+        }
+        .video5{
+            height: 56.75vw;
+        }
+        .video6{
+            height: 52vw;
+        }
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 3vw;
+        padding-right: 3vw;
+        padding-left: 3vw;
+
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: .5vw;
+
+            img{
+                height: 3vw;
+            }
+            p{
+                border-left: 2px solid white;
+            }
+            .heading{
+                padding-left: .5vw;
+                color: rgb(255, 255, 255);
+                font-size: 1vw;
+            }
+            .p{
+                padding-left: .5vw;
+                color: white;
+                font-size: .4vw;
+                letter-spacing: .1vw;
+            }
+        }
+        .nav-menu{
+            display: flex;
+            gap: 2.3vw;
+
+            a{
+                display: flex;
+                align-items: center;
+                font-size: .9vw;
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+                letter-spacing: .1vw;
+                
+
+                span{
+                    text-align: center;
+                    margin-left: .3vw;
+                    padding-top: .6vw;
+                }
+            }
+            a:nth-child(1){
+                color: orange;
+            }
+        }
+        .right-navbar{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .search-btn{
+                height: 1.5vw;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                color: white;
+                font-size: 1vw;
+                border-left: .1vw solid rgb(255, 255, 255);
+                padding-left: .5vw;
+
+                span{
+                    text-align: center;
+                    margin-left: .3vw;
+                    padding-top: .6vw;
+                }
+
+            }
+            .satyamev-symble{
+                height: 2vw;
+            }
+
+        }
+    }
+
+    .center-text{
+        display: flex;
+        flex-direction: column;
+        margin-top: 11.5vw;
+        margin-left: 3vw;
+        gap: .5vw;
+
+        div{
+            overflow: hidden;
+           height: 4.7vw;
+        }
+        div:nth-child(1){
+            height: 2vw;
+        }
+
+        .wlcm{
+            animation: swipeup 2s ease;
+            animation-delay: 3s;
+            color: orange;
+            font-size: 2vw;
+            
+
+        }
+        .heading{
+            
+            font-size: 4vw;
+            color: white;
+            font-weight: bold;
+            animation: swipeup 1s infinite linear;
+            animation-delay: 2s;
+            /* opacity: 0; Set initial opacity to hide the text */
+            transition: opacity 10s ease-in-out;
+        }
+    }
+    
+    
+}
+
+#page2{
+    position: relative;
+    height: 80vw;
+    z-index: 11;
+    background-image: linear-gradient(transparent ,black,black , black);
+    padding-top: 1vw;
+    padding-left: 12vw;
+    padding-right: 12vw;
+
+
+    .swiper {
+        margin-top: 25vw;
+        width: 75vw;
+        height: 5vw;
+        z-index: 12;
+        border: .1vw solid rgba(255, 255, 255, 0.362);
+        border-radius: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        object-fit: cover;
+
+      }
+      
+      .swiper-slide {
+        width: 75vw;
+        height: 5vw;
+        text-align: center;
+        background: rgba(23, 22, 22, 0.775);
+        display: flex;
+        flex-direction: column;
+        gap: .3vw;
+        justify-content: center;
+        align-items: center;
+        
+
+        .h6{
+            font-size: 1vw;
+            color: orangered;
+            letter-spacing: .1vw;
+        }
+        .p{
+            letter-spacing: .1vw;
+            padding-bottom: 1vw;
+            font-size: .9vw;
+            color: rgba(255, 255, 255, 0.369);
+        }
+      }
+
+      .middle-section{
+        display: flex;
+        flex-direction: column;
+        gap: .5vw;
+
+        h1{
+            letter-spacing: .15vw;
+            margin-top: 5vw;
+            font-size: 1.5vw;
+            color: white;
+        }
+        p{
+            letter-spacing: .05vw;
+            color: rgba(255, 255, 255, 0.369);
+            font-size: .9vw;
+        }
+        .card-section{
+            display: flex;
+            flex-direction: row;
+            gap: 1vw;
+
+
+            .card{
+                height: 10vw;
+                width: 19vw;
+                background-color: rgba(23, 22, 22, 0.775);;
+                padding-left: 1vw;
+                padding-right: .5vw;
+                padding-top: .5vw;
+                border-radius: 1vw;
+                transition: all ease .4s;
+                border: .1vw solid rgba(255, 255, 255, 0.199);
+               cursor: pointer;
+
+
+
+                .png-section{
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: .5vw;
+
+                    img{
+                        height: 1.7vw;
+                        opacity: 70%;
+                    }
+                    .arrow{
+                        opacity: 0;
+                        transition: all ease .4s;
+                    }
+                }
+                .h1{
+                    letter-spacing: .1vw;
+                    font-size: 1vw;
+                    margin-top: .8vw;
+                    letter-spacing: .1vw;
+
+                }
+                .p{
+                    margin-top: .5vw;
+                    font-size: .8vw;
+                    color: rgba(255, 255, 255, 0.369);
+                    line-height: 1.3vw;
+                    letter-spacing: .05vw;
+                }
+            }
+            .card:hover{
+                .arrow{
+                    opacity: 1;
+                }
+                border: .1vw solid rgba(255, 255, 255, 0.754);
+            }
+
+        }
+     }
+     .middle-section2{
+        margin-top: 5vw;
+
+        .heading-section{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .news-heading{
+                letter-spacing: .1vw;
+                font-size: 1.5vw;
+                color: white;
+            }
+            .news-btn{
+                padding-left: 2vw;
+                padding-right: 2vw;
+                padding-top: .5vw;
+                padding-bottom: .5vw;
+                font-size: 1vw;
+                border-radius: .5vw;
+                border: .1vw solid white;
+                background-color: transparent;
+                /* background-image: linear-gradient(to right, rgb(4, 255, 4), rgb(255, 166, 0)); */
+                opacity: 70%;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        .heading-news{
+            color: rgba(255, 255, 255, 0.369);
+            font-size: 0.9vw;
+        }
+        .image-section{
+            margin-top: 1vw;
+            position: relative;
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+            display: flex;
+            flex-direction: row;
+
+            .image-card{
+                height: 16.5vw;
+                width: 24vw;
+                background-color: transparent;
+                display: flex;
+
+
+                .card-image{
+                    height: 100%;
+                    width: 100%;
+                }
+                .text-section{
+                    height: 5vw;
+                    position: absolute;
+                    width: 24vw;
+                    bottom: 0;
+                    background-image: linear-gradient(transparent, black, black);
+                    opacity: 90%;
+                    transition: all ease .5s;
+                    object-fit: cover;
+                    white-space: wrap;
+                    text-align: start;
+                    
+                    .artical-duration{
+                        letter-spacing: .1vw;
+                        margin-left: 1vw;
+                        font-size: .6vw;
+                        padding: .4vw;
+                        color: white;
+                        background-color: rgba(0, 0, 0, 0.38);
+                        border: none;
+                        white-space: wrap;
+                    }
+
+                    .card-discrpition{
+                        background-image: linear-gradient(transparent, black, black);
+                        padding-left: 1vw;
+                        padding-right: 1vw;
+                        margin-top: .2vw;
+                        color: white;
+                        font-size: .8vw;
+                        letter-spacing: .1vw;
+                    }
+                }
+                
+            }
+            .image-card:hover{
+                .text-section{
+                    height: 6.5vw;
+                }
+            }
+        }
+        .Swiper {
+            height: 16.5vw;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+
+            .swiper-slide {
+                background-color: transparent;
+                border: none;
+                height: 100%;
+                width: 100%;
+              }
+              .swiper-wrapper{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                background-color: transparent;
+              }
+              
+            
+          }
+          .arrow{
+            display: flex;
+            bottom: 2.3vw;
+            gap: 1vw;
+            position: absolute;
+            right: 18vw;
+            opacity: 60%;
+
+            .swiper-button-next:after, .swiper-button-prev:after{
+                opacity: 0;
+                display: none;
+                position: absolute;
+            }
+
+            .left-arrow{
+                height: 2vw;
+                position: absolute;
+                right: 20vw;
+                
+            }
+            .right-arrow{
+                position: absolute;
+                right: -6vw;
+
+            }
+            
+          }
+      
+          
+        }
+}
+
+#page3{
+    padding-top: 5vw;
+    position: relative;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    height: 80vw;
+
+    .p-heading{
+        color: white;
+        font-size: 1.5vw;
+        letter-spacing: .1vw;
+    }
+    .p-descripition{
+        font-size: .9vw;
+        letter-spacing: .1vw;
+        margin-top: .5vw;
+        color: rgba(255, 255, 255, 0.369);
+    }
+    .portal-section{
+        display: flex;
+        gap: 1vw;
+        flex-direction: column;
+        margin-top: .7vw;
+
+        .p-card-section{
+            display: flex;
+            gap: 1vw;
+
+            .hover-effect{
+               box-sizing: border-box;
+               transition: all ease 2s;
+            }
+            .hover-effect1{
+               box-sizing: border-box;
+               transition: all ease 2s;
+            }
+
+            .p-card{
+                padding: 1vw;
+                height: 9.5vw;
+                width: 24.5vw;
+                background-color: rgba(23, 22, 22, 0.775);
+                border-radius: 1vw;
+                background-image: linear-gradient(to right , transition , red);
+                border: .1vw solid rgba(255, 255, 255, 0.369);
+                transition: all ease 1s;
+                
+
+                .card-element{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    .logo-image{
+                        border-radius: .5vw;
+                        height: 2.5vw;
+                    }
+                    .arrow-png{
+                        transition: all ease-in-out .2s;
+                        height: 1.5vw;
+                        opacity: 0;
+
+                    }
+
+                }
+                .name-heading{
+                    color: white;
+                    margin-top: .5vw;
+                    font-size: 1.1vw;
+                    letter-spacing: .15vw;
+
+                }
+                .name-description{
+                    color: rgba(255, 255, 255, 0.369);
+                    margin-top: .5vw;
+                    letter-spacing: .05vw;
+                    font-size: .8vw;
+
+                }
+            }
+            .p-card:hover{
+
+                .arrow-png{
+                    opacity: 1;
+                }
+                
+            }
+        }
+        .hover-effect:hover{
+
+            .p-card{
+                background-image: linear-gradient(to right, transparent , rgba(70, 70, 237, 0.288));
+            }
+        }
+        .hover-effect1:hover{
+
+            .p-card{
+                background-image: linear-gradient(to right, transparent , rgba(247, 141, 2, 0.288));
+            }
+
+
+            }
+        .hover-effect2:hover{
+
+            .p-card{
+                background-image: linear-gradient(to right, transparent , rgba(76, 247, 2, 0.288));
+            }
+
+
+            }
+       }
+    .update-heading{
+        letter-spacing: .1vw;
+        font-size: 1.5vw;
+        margin-top: 7vw;
+        color: white;
+    }
+    .update-discription{
+        font-size: .9vw;
+        letter-spacing: .1vw;
+        margin-top: .5vw;
+        color: rgba(255, 255, 255, 0.369);;
+    }
+
+    .update-section{
+        margin-top: .7vw;
+        display: flex;
+        flex-direction: row;
+        gap: 1.2vw;
+
+        .card-section{
+            overflow: hidden;
+            height: 25vw;
+            width: 18vw;
+            position: relative;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+            position: relative; 
+            display: inline-block;
+            /* -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent); */
+          
+            
+
+            .main-img{
+                overflow: hidden;
+                z-index: -1;
+                position: absolute;
+                height: 25vw;
+                width: 18vw;
+                background-repeat: no-repeat;
+                opacity: 100%;
+                transition: all ease 1s;
+                -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.508), transparent);
+  mask-image: linear-gradient(rgba(0, 0, 0, 0.506),black, transparent);
+                
+            }
+            .text{
+                background-image: linear-gradient(transparent, black);
+                width: 18vw;
+                height: 15vw;
+                padding-left: .8vw;
+                padding-right: .8vw;
+                margin-top: 23vw;
+                white-space: wrap;
+                transition: all ease 1s;
+                z-index: 11;
+
+                .mission-heading{
+                    letter-spacing: .08vw;
+                    font-size: .9vw;
+                    text-align: center;
+                    color: white;
+
+                }
+                .mission-discription{
+                    margin-top: 1vw;
+                    font-size: .8vw;
+                    letter-spacing: .05vw;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.811);;
+
+                }
+            }
+            .know-btn{
+                margin-top: 1vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               
+
+                .know-more-btn{
+                    padding-top: .7vw;
+                    padding-bottom: .7vw;
+                    padding-right: 1.2vw;
+                    padding-left: 1.2vw;
+                    text-decoration: none;
+                    background-color: rgba(255, 255, 255, 0.181);
+                    border: none;
+                    border-radius: .5vw;
+
+                    a{
+                        color: white;
+                        font-size: .8vw;
+                        text-decoration: none;
+
+                    }
+
+                }
+            }
+        }
+    }
+    .card-section:hover{
+
+        .text{
+            margin-top: 10vw;
+        }
+        .main-img{
+            opacity: 40%;
+        }
+    }
+
+      
+}
+
+#page4{
+    padding-top: 5vw;
+    height: 50vw;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    backdrop-filter: blur(1vw);
+
+
+    .background-image{
+        mix-blend-mode:color-burn;
+        height: 70vw;
+        opacity: 10%;
+        position: absolute;
+        left: 0;
+    }
+    .center-heading{
+        color: white;
+        font-size: 1.5vw;
+        letter-spacing: .1vw;
+
+    }
+    .center-description{
+        font-size: .9vw;
+        letter-spacing: .1vw;
+        margin-top: .5vw;
+        color: rgba(255, 255, 255, 0.369);;
+
+    }
+    .Center-section{
+        position: relative;
+        padding-top: 2vw;
+        display: flex;
+        align-items: center;
+        gap: 15vw;
+
+        .Centers-name{
+            /* display: flex; */
+            height: 33vw;
+            width: 23vw;
+            border-radius: 1vw;
+            background-color: rgba(255, 255, 255, 0.032);
+            border: .1vw solid rgba(255, 255, 255, 0.139);
+            /* backdrop-filter: blur(50vw); */
+            backdrop-filter: blur(100vw);
+            
+
+            .navbar-section{
+                display: flex;
+                
+                align-items: end;
+                justify-content: space-between;
+                border-bottom: .1vw solid rgba(255, 255, 255, 0.369);
+                
+                li{
+                    margin-left: .8vw;
+                    margin-right: .8vw;
+                    margin-top: .8vw;
+                    padding-bottom: .6vw;
+                    display: flex;
+                    align-items: end;
+                    justify-content: end;
+                    position: relative;
+                    letter-spacing: .05vw;
+                    font-size: .75vw;
+                    cursor: pointer;
+                    list-style: none;
+                    color: white;
+                    /* border-bottom: .2vw solid orangered; */
+                    border-radius: .2vw;
+                }
+                .navbar1{
+                    border-bottom: .2vw solid orangered;
+                    color: orangered;
+                }
+                .navbar2{
+                   border: none;
+
+                }
+
+            }
+        }
+
+        .map-section{
+
+            .map-image{
+                
+
+            .map{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40vw;
+                opacity: 70%;
+                
+            }
+
+        }
+    }
+}
+}
+
+
+
+
+@keyframes swipeup {
+    /* 0%{ 
+        padding-top: 4vw;
+        opacity: 0;
+    }
+    100%{
+        animation-delay: 5s;
+        padding-top: 0vw;
+        opacity: 1;
+        
+        
+    } */
+    0% {
+        opacity: 0;
+        padding-top: 4vw;
+    }
+    10% {
+        opacity: 1; /* Fade in for the first 10% of the animation */
+    }
+    90% {
+        opacity: 1; /* Hold the opacity for the next 80% (10-90%) of the animation */
+    }
+    100% {
+        opacity: 0;
+        padding-top: 0vw; /* Fade out for the last 10% of the animation */
+    }
+}
+.heading::after {
+    content: ""; /* Add a pseudo-element to hold the text visible */
+    animation: holdVisible 10s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes holdVisible {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
